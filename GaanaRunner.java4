@@ -1,0 +1,23 @@
+public class GaanaRunner{
+public static void main(String[] args){
+Song song = new Song();
+int length = song.getlength();
+		System.out.println("length is:"+length);
+		song.createbySongname("Varincheprema");
+		song.createbySongname("Adigaa");
+		song.createbySongname("Blue bird");
+		song.createbySongname("NarutoTitle");
+		song.createbySongname("Nuvvantae na jathaga");
+		song.songreadby();
+		System.out.println("----------update--------");
+		song.songupdateby("Nuvvantae na jathaga","Nepadhalakumuvvalla");
+		song.songreadby();
+		System.out.println("----------delete--------");
+		song.songdeleteby("Blue bird");
+		song.songreadby();
+		System.out.println("----------search--------");
+		String songs = song.searchBySongNames("NarutoTitle");
+		System.out.println(songs);
+		song.songreadby();
+ }
+}
