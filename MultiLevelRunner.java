@@ -18,14 +18,20 @@ public class MultiLevelRunner {
 		System.out.println(cmy.no);
 		
 		Job job = new Job();
-		job.lenth = 68879;
+		job.lenth= 68879.5;
 		job.names = "devloper";
 		job.value = true;
-		System.out.println(job.length);
+		System.out.println(job.lenth);
 		System.out.println(job.names);
 		System.out.println(job.value);
 		
 		Salary sal = new Salary();
+		sal.amt = 4;
+		sal.sal = 456;
+		System.out.println(sal.amt);
+		System.out.println(sal.sal);
+		
+		
 		
 	}
 

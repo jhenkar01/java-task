@@ -1,91 +1,53 @@
-/*1. in each class developer needs to declare 3 methods without return
-type and without arguments, in each method it add 5 if statement
-Bank
-Hotel
-Chess
-Table
-Gmail
-T20*/
-public class Bank{
+package com.amazon.encapsulation.things;
 
-public static void bankname(){
+public class Bank {
 	
-	boolean name = true;
-	if(name){
-		
-		System.out.println("yes");
-		
+	private int bank_acc_no;
+	private String acc_holder_name;
+	private String bank_name;
+	private float bank_balance;
+	private int adhar_no;
 	
-	}if(100>10){
-		
-		
-		System.out.println("no");
+	public void setbankno(int bank_acc_no) {
+		this.bank_acc_no = bank_acc_no;
 	}
-	if(5<78){
-		System.out.println("aa");
-	}
-	if(7>56){
-		
-		System.out.println("bb");
-	}
-	if(8<9){
-		
-		System.out.println("cc");
-	}
-}
-public static void bankbalance(){
 	
-	int balance = 100;
-	if (balance>1000){
+	public int getbankno() {
 		
-		System.out.println("min balance");
-	}if(2<3){
-		
-		System.out.println("insufficiant balance");
+		return this.bank_acc_no;
 	}
-	if(23>6){
-		System.out.println("balance");
-		
-	}
-	if(67<78){
-		
-		System.out.println("insufficiant ");
-	}
-	if(77<887){
-		System.out.println("false");
-	}
-}	
-public static void bankadress(){
 	
-	String adress = "mysore";
-	if(adress == "mysore"){
+	public void setHolderName(String acc_holder_name) {
 		
-		System.out.println("crct adress");
-	}if(99<8){
+		this.acc_holder_name = acc_holder_name;
+	}
+	public String getHolderName() {
 		
-		System.out.println("incorrect adress");
+		return this.acc_holder_name;
 	}
-	if(67>98)
-	{
-		System.out.println("hh");
-	}
-	if(6788<44)
-	{
+	public void setBankName(String bank_name) {
 		
-		System.out.println("jjj");
+		this.bank_name = bank_name;
 	}
-	if(87>89)
-	{
-		
-		System.out.println("insufficiant balance");
-	}
-}
-}
 
-
-
-	
-	
-	
-	
-
+	public String getBankName() {
+		
+		return this.bank_name;
+	}
+	public void setBankBalance(int bank_balance) {
+		
+		this.bank_balance = bank_balance;
+	}
+	public float getBankBalance() {
+		
+		return this.bank_balance;
+	}
+	public void setAdharNo(int adhar_no) {
+		
+		this.adhar_no = adhar_no;
+	}
+	public int getAdharNo() {
+		
+		return this.adhar_no;
+	}
+};
